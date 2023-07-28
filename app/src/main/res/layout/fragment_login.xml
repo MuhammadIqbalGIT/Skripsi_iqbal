@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundblurfull"
+    tools:context=".LoginFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="171dp"
+        android:src="@drawable/logo_grc_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="86dp"
+        android:fontFamily="@font/publicsansreguler"
+        android:text="Sign In"
+        android:textColor="#2D3436"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+    </TextView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSendOTP"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        style="@style/buttonCustomBlue"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/publicsansreguler"
+        android:text="Kirim Kode OTP"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:endIconMode="clear_text"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:startIconDrawable="@drawable/ic_handphone">
+
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan no. HP"
+            android:fontFamily="@font/publicsansreguler"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

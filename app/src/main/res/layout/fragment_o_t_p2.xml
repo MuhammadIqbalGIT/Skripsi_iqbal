@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".OTP.OTPFragment">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="20dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBackToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+
+
+
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="91dp"
+        android:fontFamily="@font/publicsansreguler"
+        android:gravity="center"
+        android:text="Masukkan Kode OTP"
+        android:textAlignment="center"
+        android:textColor="#2D3436"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="91dp"
+        android:fontFamily="@font/publicsansreguler"
+        android:gravity="center"
+        android:text="Kode OTP telah kami kirim via SMS
+        ke nomor HP yang anda masukkan"
+        android:textAlignment="center"
+        android:textColor="#2D3436"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="91dp"
+        android:fontFamily="@font/publicsansreguler"
+        android:gravity="center"
+        android:text="0856 - 3345 - 8789"
+        android:textAlignment="center"
+        android:textColor="#2D3436"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:tooltipText="asasaasss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pinview"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="66dp"
+        app:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:pinBackground="@drawable/otp_background"
+        app:pinHeight="51dp"
+        app:pinWidth="48dp"
+        app:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="112dp"
+        android:fontFamily="@font/publicsansreguler"
+        android:gravity="center"
+        android:text="Belum terima Kodenya ?"
+        android:textAlignment="center"
+        android:textColor="#2D3436"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinview" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="133dp"
+        android:fontFamily="@font/publicsansreguler"
+        android:gravity="center"
+        android:text="Kirim Ulang (60)"
+        android:textAlignment="center"
+        android:textColor="#2D3436"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btnVerifOTP"
+        style="@style/buttonCustomBlue"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="63dp"
+        android:fontFamily="@font/publicsansreguler"
+        android:text="Verifikasi OTP"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

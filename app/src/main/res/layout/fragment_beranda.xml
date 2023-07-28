@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.Beranda.BerandaFragment">
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:orientation="horizontal"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/textView9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="474dp"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:singleSelection="true">
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip7"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semua" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip6"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum dipickup" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip4"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah dipickup" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip5"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dibatalkan" />
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="48dp"
+        android:visibility="gone"
+        android:layout_marginEnd="110dp"
+        android:src="@drawable/logo_grc_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/publicsansreguler"
+        android:text="Selamat siang,"
+        android:textColor="#2D3436"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/publicsansreguler"
+        android:text="Pelapak"
+        android:textColor="#2D3436"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/ic_calender"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/publicsansreguler"
+        android:layout_marginTop="24dp"
+        android:textSize="12sp"
+        android:layout_marginEnd="16dp"
+        android:text="Senin, 15 Agu 2022"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/publicsansreguler"
+        android:text="List request pickup hari ini"
+        android:textColor="#2D3436"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+    </TextView>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2">
+
+
+        </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewListRequest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_request">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

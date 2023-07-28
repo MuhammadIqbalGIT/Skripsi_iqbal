@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/berandaFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Beranda" />
+    <item
+        android:id="@+id/riwayatFragment"
+        android:icon="@drawable/ic_nav_riwayat"
+        android:title="Riwayat" />
+    <item
+        android:id="@+id/requestFragment"
+        android:icon="@drawable/ic_nav_list_request"
+        android:title="Request" />
+    <item
+        android:id="@+id/notificationFragment"
+        android:icon="@drawable/ic_nav_notifikasi"
+        android:title="Notifikasi" />
+    <item
+        android:id="@+id/profilFragment"
+        android:icon="@drawable/ic_nav_profil"
+        android:title="Profil" />
+</menu>

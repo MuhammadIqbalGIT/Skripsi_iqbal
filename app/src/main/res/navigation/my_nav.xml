@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.kanyideveloper.onboardingscreens.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerAdapter"
+            app:destination="@id/viewPagerAdapter"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment2"
+            app:destination="@id/LoginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerAdapter"
+        android:name="com.kanyideveloper.onboardingscreens.onboarding.ViewPagerFragment"
+        android:label="fragment_view_pager_adapter"
+        tools:layout="@layout/fragment_view_pager_adapter" >
+        <action
+            android:id="@+id/action_viewPagerAdapter_to_homeFragment"
+            app:destination="@id/LoginFragment"
+            app:popUpTo="@id/viewPagerAdapter"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.kanyideveloper.onboardingscreens.LoginFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_LoginFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.kanyideveloper.onboardingscreens.OTP.OTPFragment"
+        android:label="fragment_o_t_p2"
+        tools:layout="@layout/fragment_o_t_p2" >
+        <action
+            android:id="@+id/action_OTPFragment_to_loadingScreenFragment"
+            app:destination="@id/loadingScreenFragment" />
+        <action
+            android:id="@+id/action_OTPFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingScreenFragment"
+        android:name="com.kanyideveloper.onboardingscreens.loadingscreen.LoadingScreenFragment"
+        android:label="fragment_loading_screen"
+        tools:layout="@layout/fragment_loading_screen" >
+        <action
+            android:id="@+id/action_loadingScreenFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.kanyideveloper.onboardingscreens.Home.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+</navigation>

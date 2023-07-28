@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GRC Lapak</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="template">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate at sapien id bibendum. Aliquam id nibh mollis, congue felis id, molestie neque. Suspendisse magna elit, gravida vitae dolor a, fringilla maximus ante.</string>
+
+
+    <string name="SudahDipickup">Sudah dipickup</string>
+    <string name="BelumDipickup">Belum dipickup</string>
+    <string name="Dibatalkan">Dibatalkan</string>
+    <string name="Document1">DOC/082022/00001</string>
+    <string name="Document2">DOC/082022/00002</string>
+    <string name="Document3">DOC/082022/00003</string>
+    <string name="Document4">DOC/082022/00004</string>
+    <string name="Document5">DOC/082022/00005</string>
+    <string name="Document6">DOC/082022/00006</string>
+    <string name="Document7">DOC/082022/00007</string>
+    <string name="Document8">DOC/082022/00008</string>
+    <string name="Document9">DOC/082022/00009</string>
+    <string name="Document10">DOC/082022/00010</string>
+
+    <string name="Clock">13:00</string>
+
+
+</resources>
